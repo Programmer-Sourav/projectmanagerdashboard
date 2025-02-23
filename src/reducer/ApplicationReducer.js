@@ -18,4 +18,4 @@ export function appReducer(state, action){
 
 }
 
-export default ApplicationReducer;
+export default appReducer;

@@ -6,6 +6,7 @@ export default function AddProjectPage(){
    const [projectBudget, setProjectBudget] = useState(0)
    const [hoursToWork, setHoursToWork] = useState(0)
    const [clientName, setClientName] = useState("")
+   const [stateOfTheProject, setStateOfTheProject] = useState("")
 
 
     return(
