@@ -1,0 +1,60 @@
+.square-card-project1{
+    position: relative;
+    width: 752px;
+    height: 192px;
+    background-color: wheat;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.top-icon-sq-card1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.projects-no1{
+    font-size: 36px;
+    font-weight: 900;
+    display: block; 
+}
+.square-card-project1 h3{
+    margin-top: -8px;
+}
+.square-card-project1 p{
+    margin-top: -12px;
+    font-size: 12px;
+}
+
+.progressbar1{
+    width: 512px;
+    padding-right: 4px;
+    height: 12px;
+    background-color: red;
+}
+.btmbar1{
+position: absolute;    
+display: flex;
+bottom: 0;
+justify-content: center;
+background-color: green;
+height: 48px;
+align-items: start;
+}
+.square-card-project1 .btm p{
+    margin-top: -12px;
+    font-size: 12px;
+}
+.btndesign{
+    height: auto;
+    width: 156px;
+    margin: 8px;
+}

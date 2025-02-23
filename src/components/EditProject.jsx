@@ -1,10 +1,10 @@
-import "./addproject.css"
+import "./editproject.css"
 
 import { useContext, useReducer, useState } from "react"
 import { initialState } from "../reducer/ApplicationReducer"
 import { AppContext } from "../reducer/AppContext"
 
-export default function AddProjectPage(){
+export default function EditProject({appname, clientname, totalbudget, profitibility, actualHours, hoursWorked}){
    const [projectName, setProjectName] = useState("")
    const [projectBudget, setProjectBudget] = useState(0)
    const [hoursToWork, setHoursToWork] = useState(0)

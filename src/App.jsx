@@ -13,9 +13,12 @@ import AddProject from './pages/AddProjectPage'
 import { Route, Routes } from 'react-router'
 import AddProjectPage from './pages/AddProjectPage'
 import { AppProvider } from './reducer/AppContext'
+import Header from './components/Header'
+import AllProjects from './pages/AllProjects'
+import AllTeam from './pages/AllTeam'
+import AllClients from './pages/AllClients'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -30,6 +33,9 @@ function App() {
       <Routes>
       <Route path="/" element={<MainPage/>}/>
         <Route path="/addproject" element={<AddProjectPage/>}/>
+        <Route path="/projects" element={<AllProjects/>}/>
+        <Route path="/team" element={<AllTeam/>}/>
+        <Route path="/clients" element={<AllClients/>}/>
       </Routes>
       </AppProvider>
        </>

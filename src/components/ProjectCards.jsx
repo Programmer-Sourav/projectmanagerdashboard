@@ -8,16 +8,16 @@ export default function ProjectCards({appName, client, totalBudget, profitibilit
 
     return(
         <div className="square-card-project"> 
-           <h3>Insurance App</h3>
-           <p style={{color: "gray"}}>Verti</p>
-           <p><span style={{color: "gray"}}>Total Budget: </span><span>$75000</span></p>
-           <p><span style={{color: "gray"}}>Profitablity: </span><span>-2500$</span></p>
+           <h3>{appName}</h3>
+           <p style={{color: "gray"}}>{client}</p>
+           <p><span style={{color: "gray"}}>Total Budget: </span><span>${totalBudget}</span></p>
+           <p><span style={{color: "gray"}}>Profitablity: </span><span>{profitibility}$</span></p>
            <img src={userImage} alt="profilePic" className="top-icon-sq-card"/>
            <div className="progressbar"></div>
            <div>
            <p>Actual Hours: 
-           {1000}</p>
-           <p>100 hours over budget</p>
+           {actualHours}</p>
+           <p>{hoursWorked} hours over budget</p>
            </div>
         </div>
     )

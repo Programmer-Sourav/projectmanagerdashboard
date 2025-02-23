@@ -1,13 +1,13 @@
+import { useContext } from "react";
 import EmployeeCard from "./EmployeeCard";
 import "./employees.css"
+import { AppContext } from "../reducer/AppContext";
 
 export default function Employees(){
-  const listOfEmployees = [{id: 1, employeeName:"Andrea", designatio:  "Junior UX"},
-    {id: 2, employeeName:"Alvaro", designatio:  "Backend Developer"},
-    {id: 3, employeeName:"Juan", designatio:  "UX Senior"},
-    {id: 4, employeeName:"Jose", designatio:  "Marketting"},
-    {id: 5, employeeName:"Maria", designatio:  "Junior UX"}
-  ]
+
+  const { state, dispatch } = useContext(AppContext)
+
+  const listOfEmployees = state.allEmployees;
 
     return(
         <div className="employeesList">

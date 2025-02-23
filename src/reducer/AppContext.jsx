@@ -7,6 +7,9 @@ export const AppContext = createContext();
 export function AppProvider ({ children }) {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
+  // const allProjects= state.allProject
+  // console.log(222, allProjects)
+
   return (
     <AppContext.Provider value={{ state, dispatch }}>
       {children}
