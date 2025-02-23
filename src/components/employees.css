@@ -1,0 +1,4 @@
+.employeesList{
+    display: flex;
+    flex-direction: column;
+}

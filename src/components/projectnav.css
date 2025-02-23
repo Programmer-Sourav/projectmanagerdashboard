@@ -1,0 +1,24 @@
+.projectnavbody{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.addprojectbutton{
+    background-color: turquoise;
+    height: 40px;
+    width: 256px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+.outlinebtn{
+    background-color: white;
+    height: 40px;
+    width: 256px;
+    outline: 1px solid turquoise; 
+    font-weight: 400;
+    text-align: center;
+}

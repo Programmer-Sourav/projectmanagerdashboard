@@ -1,0 +1,24 @@
+.square-card-top{
+    position: relative;
+    width: 128px;
+    height: 108px;
+    background-color: wheat;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.top-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+}
+
+.projects-no{
+    font-size: 36px;
+    font-weight: 900;
+    display: block;
+ 
+}

@@ -1,0 +1,55 @@
+.square-card-project{
+    position: relative;
+    width: 252px;
+    height: 172px;
+    background-color: wheat;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.top-icon-sq-card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.projects-no{
+    font-size: 36px;
+    font-weight: 900;
+    display: block; 
+}
+.square-card-project h3{
+    margin-top: -8px;
+}
+.square-card-project p{
+    margin-top: -12px;
+    font-size: 12px;
+}
+
+.progressbar{
+    width: 100%;
+    padding-right: 4px;
+    height: 12px;
+    background-color: red;
+}
+.btmbar{
+position: absolute;    
+display: flex;
+bottom: 0;
+justify-content: center;
+background-color: green;
+height: 48px;
+align-items: start;
+}
+.square-card-project .btm p{
+    margin-top: -12px;
+    font-size: 12px;
+}
