@@ -1,0 +1,14 @@
+.linebody{
+    width: 512px;
+    height: 512px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linecard{
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    box-shadow: silver;
+}

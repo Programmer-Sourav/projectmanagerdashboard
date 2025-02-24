@@ -1,0 +1,8 @@
+.charts{
+    width: calc(100% - 152px);
+    background-color: aliceblue;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -6,6 +6,7 @@ import ProjectNavComponent from "../components/ProjectNavComponent";
 import { useContext } from "react";
 import { AppContext } from "../reducer/AppContext";
 import Header from "../components/Header";
+import CenterMain from "../components/CenterMain";
 
 export default function MainPage(){
   
@@ -15,9 +16,9 @@ export default function MainPage(){
 
     return(
         <div className="mainpage"> 
-              <Header/>
+            <Header/>
             <TopBanner/>
-            <Employees/>
+            <CenterMain/>
            <ProjectNavComponent/>
             <ProjectBanner/>
         </div>

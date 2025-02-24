@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -17,8 +17,25 @@ import Header from './components/Header'
 import AllProjects from './pages/AllProjects'
 import AllTeam from './pages/AllTeam'
 import AllClients from './pages/AllClients'
+import loadScript from 'load-script'; // Import load-script
 
 function App() {
+
+  const [chartLoaded, setChartLoaded] = useState(false);
+  useEffect(() => {
+    loadScript('https://cdn.jsdelivr.net/npm/chart.js', (err, script) => {
+      if (err) {
+        console.error('Error loading Chart.js:', err);
+        return;
+      }
+      // Once Chart.js is loaded, set chartLoaded to true
+      setChartLoaded(true);
+    });
+  }, []);
+
+  if (!chartLoaded) {
+    return <div>Loading Chart.js...</div>;
+  }
 
   return (
     <>
