@@ -5,8 +5,8 @@ import PieChart from "./PieChart";
 export default function ChartsFragment() {
     return(
         <div className="charts"> 
-              <LineChart/>
-              <PieChart/>
+              <LineChart className="item1"/>
+              <PieChart className="item2"/>
         </div>
     )
 }
